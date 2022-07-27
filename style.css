@@ -186,7 +186,7 @@ h3 {
   background-color: palevioletred;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 150px 170px;
+  grid-template-columns: 150px auto;
   grid-auto-rows: minmax(30px, auto);
   padding: 15px;
   
@@ -198,15 +198,16 @@ h3 {
   font-size: 1.5rem;
 }
 
+.output-container input {
+    width: 96%;
+}
+
 .output-data {
   grid-column-start: 2;
   grid-column-end: 3;
   font-size: 1.5rem;
   background-color: white;
+  font-size: 1.5rem;
+  height: 80%;
+  width: 100%;
 }
-
-.output-data {
-    font-size: 1.5rem;
-    height: 80%;
-}
-
