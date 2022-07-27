@@ -51,9 +51,8 @@ table {
 
 /* my additions for this project */
 
-input[type="checkbox" i] {
-
+input[type="checkbox"] {
     margin: 0;
     border: 0;
-
 }
+
