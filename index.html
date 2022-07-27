@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BizBuzz Calculator</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>BizBuzz Calculator</h1>
+    <div class="calc-container">
+      <div id="form-section">
+        <div id="form-header"><h2>Input</h2></div>
+        <div class="form-container">
+          <label for="" class="label-text">Quantity</label>
+          <div id="qty-container">
+            <div class="qty-sets">
+              <input type="checkbox" class="qty-ceckbox" value="" />
+              <input type="text" value="50" id="lname" class="qty-input" />
+            </div>
+            <div class="qty-sets">
+              <input type="checkbox" class="qty-ceckbox" value="" />
+              <input type="text" value="100" id="lname" class="qty-input" />
+            </div>
+            <div class="qty-sets">
+              <input type="checkbox" class="qty-ceckbox" value="" />
+              <input type="text" value="250" id="lname" class="qty-input" />
+            </div>
+            <div class="qty-sets">
+              <input type="checkbox" class="qty-ceckbox" value="" />
+              <input type="text" value="500" id="lname" class="qty-input" />
+            </div>
+            <div class="qty-sets">
+              <input type="checkbox" class="qty-ceckbox" value="" />
+              <input type="text" value="1000" id="lname" class="qty-input" />
+            </div>
+            <div class="qty-sets">
+              <input type="checkbox" class="qty-ceckbox" value="" />
+              <input type="text" value="2500" id="lname" class="qty-input" />
+            </div>
+            <div class="qty-sets">
+              <input type="checkbox" class="qty-ceckbox" value="" />
+              <input type="text" value="5000" id="lname" class="qty-input" />
+            </div>
+          </div>
+          <label for="" class="label-text">Pricing Type</label>
+          <select id="appType">
+            <option selected>EQP</option>
+            <option>EQP-1%</option>
+            <option>EQP-2%</option>
+            <option>EQP-3%</option>
+            <option>EQP-5%</option>
+            <option>Non EQP</option>
+          </select>
+          <label for="" class="label-text">Unit Price</label>
+          <div id="unit-price-container">
+            <div class="unit-price-set">
+              <label for="">50</label>
+              <input type="text" id="lname" class="input" />
+            </div>
+            <div class="unit-price-set">
+              <label for="">100</label>
+              <input type="text" id="lname" class="input" />
+            </div>
+            <div class="unit-price-set">
+              <label for="">250</label>
+              <input type="text" id="lname" class="input" />
+            </div>
+            <div class="unit-price-set">
+              <label for="">500</label>
+              <input type="text" id="lname" class="input" />
+            </div>
+            <div class="unit-price-set">
+              <label for="">1000</label>
+              <input type="text" id="lname" class="input" />
+            </div>
+            <div class="unit-price-set">
+              <label for="">2500</label>
+              <input type="text" id="lname" class="input" />
+            </div>
+            <div class="unit-price-set">
+              <label for="">5000</label>
+              <input type="text" id="lname" class="input" />
+            </div>
+          </div>
+          <label for="" class="label-text">Code (Unit)</label>
+          <select id="appType">
+            <option selected>C</option>
+            <option>V</option>
+            <option>A</option>
+            <option>B</option>
+            <option>D</option>
+            <option>E</option>
+            <option>F</option>
+            <option>G</option>
+            <option>H</option>
+            <option>P</option>
+            <option>Q</option>
+            <option>R</option>
+            <option>S</option>
+            <option>T</option>
+            <option>U</option>
+            <option>W</option>
+            <option>Z</option>
+          </select>
+          <label for="" class="label-text">Setup Fee</label>
+          <input type="text" id="lname" class="input" />
+          <label for="" class="label-text">Code (Setup)</label>
+          <select id="appType">
+            <option selected>V</option>
+            <option>C</option>
+            <option>A</option>
+            <option>B</option>
+            <option>D</option>
+            <option>E</option>
+            <option>F</option>
+            <option>G</option>
+            <option>H</option>
+            <option>P</option>
+            <option>Q</option>
+            <option>R</option>
+            <option>S</option>
+            <option>T</option>
+            <option>U</option>
+            <option>W</option>
+            <option>Z</option>
+          </select>
+          <label for="" class="label-text">Large Box </label>
+          <div class="box-container">
+            <div class="box-pairs">
+              <label for="">QTY</label>
+              <input type="text" />
+            </div>
+            <div class="box-pairs">
+              <label for="">COST</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <label for="" class="label-text">Medium Box</label>
+          <div class="box-container">
+            <div class="box-pairs">
+              <label for="">QTY</label>
+              <input type="text" />
+            </div>
+            <div class="box-pairs">
+              <label for="">COST</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <label for="" class="label-text">Small Box</label>
+          <div class="box-container">
+            <div class="box-pairs">
+              <label for="">QTY</label>
+              <input type="text" />
+            </div>
+            <div class="box-pairs">
+              <label for="">COST</label>
+              <input type="text" />
+            </div>
+          </div>
+        
+
+
+
+          <label for="" class="label-text">Handling Fees</label>
+          <div id="handling-fees-container">
+            <div class="handling-fees-pairs">
+              <label for="">ORDER</label>
+              <input type="text" />
+            </div>
+            <div class="handling-fees-pairs">
+              <label for="">BOX</label>
+              <input type="text" />
+            </div>
+            <div class="handling-fees-pairs">
+              <label for="">RUSH</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+        <div id="btn-container">
+          <button id="btn">Submit</button>
+        </div>
+      </div>
+
+      <div id="output-section">
+        <h2>Output</h2>
+        <h3>100 pcs</h3>
+        <div class="output-container">
+          <p class="output-label">Total Profit</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+          <p id="output-set-margin" class="output-label">Profit Margin</p>
+          <input type="text" value="40%" class="output-data" />
+
+          <p class="output-label">Retail Per Piece</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+          <p class="output-label">Retail Total</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+          <p class="output-label">Net Cost Per Piece</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+        </div>
+        <h3>250 pcs</h3>
+        <div class="output-container">
+          <p class="output-label">Total Profit</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+          <p id="output-set-margin" class="output-label">Profit Margin</p>
+          <input type="text" value="40%" class="output-data" />
+          <p class="output-label">Retail Per Piece</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+          <p class="output-label">Retail Total</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+          <p class="output-label">Net Cost Per Piece</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+        </div>
+
+        <h3>500 pcs</h3>
+        <div class="output-container">
+          <p class="output-label">Total Profit</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+          <p id="output-set-margin" class="output-label">Profit Margin</p>
+          <input type="text" value="40%" class="output-data" />
+          <p class="output-label">Retail Per Piece</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+          <p class="output-label">Retail Total</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+          <p class="output-label">Net Cost Per Piece</p>
+          <div class="output-data">
+            <p>Output Data</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

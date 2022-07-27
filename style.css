@@ -1,0 +1,212 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+}
+
+h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 3%;
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+
+/* ------------------- grid ------------------------------- */
+
+/* form */
+
+/* .form-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "labels form"
+    "footer footer";
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 8% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+} */
+.calc-container {
+  display: flex;
+}
+
+/* ---------------------------------------- input form ------------------------------------------------------- */
+#form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 68%;
+    background-color: lightblue;
+    padding: 3%;
+}
+
+#form-header {
+    width: 100%;
+}
+
+.form-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 120px auto;
+  grid-auto-rows: minmax(40px, auto);
+  
+}
+
+.label-text {
+  font-size: 1.5rem;
+}
+
+.form-container .input {
+  height: 23px;
+}
+
+.form-container select {
+  height: 30px;
+}
+
+.input-container input {
+  width: 90px;
+}
+
+
+/* --------------------------------------------form input elements--------------------- */
+
+/* ---------------------------------------------------------------------------------QTY */
+#qty-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.qty-sets {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.qty-input {
+  width: 45px;
+}
+
+
+.qty-sets input[type="checkbox"] {
+    margin: 0 7px 0 0;
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.4); /* IE */
+  -moz-transform: scale(1.4); /* FF */
+  -webkit-transform: scale(1.4); /* Safari and Chrome */
+  -o-transform: scale(1.4); /* Opera */
+  transform: scale(1.4);
+  
+}
+
+/* ---------------------------------------------------------------------------------  Unit Price */
+
+#unit-price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#unit-price-container input {
+    width: 50px;
+}
+
+/* --------------------------------------------------------------------------------- Box Shipping */
+
+.box-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box-pairs input {
+    width: 100px;
+}
+.box-pairs label {
+    margin-left: 23px;
+}
+
+/* --------------------------------------------------------------------------------- Handling Fees */
+
+#handling-fees-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.handling-fees-pairs input {
+    width: 100px;
+}
+.handling-fees-pairs label {
+    margin-right: 5px;
+}
+
+
+/* --------------------------------------------------------------------------------- Submit Button */
+
+#btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#btn-container button {
+
+  margin-top: 70px;
+  width: 250px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+/* ------------------------------------- output--------------------- */
+
+#output-section {
+  background-color: bisque;
+  width: 32%;
+  padding: 30px;
+}
+
+.output-container {
+  max-width: 350px;
+  background-color: palevioletred;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 150px 170px;
+  grid-auto-rows: minmax(30px, auto);
+  padding: 15px;
+  
+}
+
+.output-label {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 1.5rem;
+}
+
+.output-data {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+.output-data {
+    font-size: 1.5rem;
+    height: 80%;
+}
+
