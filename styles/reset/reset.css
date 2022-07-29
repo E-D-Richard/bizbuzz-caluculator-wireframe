@@ -57,6 +57,10 @@ html {
 	box-sizing: inherit;
   }
 
+input {
+	border: none;
+}
+
 
 /* my additions for this project */
 
@@ -64,5 +68,6 @@ input[type="checkbox"] {
     margin: 0;
     border: none;
 }
+
 
 
