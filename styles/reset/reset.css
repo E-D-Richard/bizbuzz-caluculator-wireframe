@@ -48,11 +48,21 @@ table {
 }
 
 
+/* my additions */
+
+html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+
 
 /* my additions for this project */
 
 input[type="checkbox"] {
     margin: 0;
-    border: 0;
+    border: none;
 }
+
 
