@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    
     <link rel="stylesheet" href="./styles/reset/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Document</title>
   </head>
   <body>
     <h1>BizBuzz Calculator</h1>
-    <div id="nav-to-new"><a href="../old-version/old-index.html">Old Version</a></div>
+    <div id="nav-to-new">
+      <a href="../old-version/old-index.html">Old Version</a>
+    </div>
     <div id="input-container">
       <h2>Input</h2>
-      <div id="input-form">
+      <div id="input-grid">
         <!-- Pricing Type -->
-        <p class="pricing-type input-head">Pricing Type</p>
+        <p class="pricing-type input-head">Pricing</p>
         <select class="pricing-type" id="pricing-type-selector">
           <option selected>EQP</option>
           <option>EQP-1%</option>
@@ -132,19 +132,22 @@
           <option>Z</option>
         </select>
         <!-- Box Qty/Cost -->
-        <p class="box-qty input-head">Box Qty</p>
+        <p id="box-head" class="input-head">Box</p>
+        <p class="box-qty">QTY</p>
         <input class="box-qty" type="text" />
-        <button id="box-btn">Add Box</button>
-        <p class="box-cost input-head">Box Cost</p>
+        <p class="box-cost">COST</p>
         <input class="box-cost" type="text" />
+        <button id="box-btn">Add Box</button>
         <!-- Handling Fees -->
-        <p class="input-head" id="handling-fees-head">Handling Fees</p>
+        <p class="input-head" id="handling-head">Handling</p>
+        <p class="handling">TYPE</p>
         <select class="handling-fees-selector" id="">
           <option selected>order</option>
           <option>box</option>
           <option>rush</option>
           <option>misc</option>
         </select>
+        <p class="handling">FEE</p>
         <input class="handling-fees-input" type="text" />
         <select class="handling-fees-selector" id="">
           <option>order</option>
@@ -161,13 +164,40 @@
         </select>
         <input class="handling-fees-input" type="text" />
         <button id="handling-fees-btn">Add Fee</button>
-        <!-- Input form closer div -->
       </div>
-      <!-- Input container closer div -->
+      <!-- input-grid closer -->
     </div>
+    <!-- Input container closer -->
 
-    <div id="result-container">
+    <div id="output-container">
       <h2>Results</h2>
+      <div id="output-grid">
+        <h3>X pcs</h3>
+        <p>Net Cost Per Piece</p>
+        <div class="output-data">
+          <p>result data</p>
+        </div>
+        <p>Retail Per Piece</p>
+        <div class="output-data">
+          <p>result data</p>
+        </div>
+        <p>Retail Total</p>
+        <div class="output-data">
+          <p>result data</p>
+        </div>
+        <p>Total Profit</p>
+        <div class="output-data">
+          <p>result data</p>
+        </div>
+        <p>Profit Margin</p>
+        <form action="">
+          <label for="profit-margin"></label>
+          <input type="text" id="profit-margin" />
+        </form>
+
+      </div>
+      <!-- output-grid closer -->
     </div>
+    <!-- output-container closer -->
   </body>
 </html>
